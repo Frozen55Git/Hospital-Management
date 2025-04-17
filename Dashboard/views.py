@@ -12,7 +12,6 @@ class StaffViewSet(viewsets.ModelViewSet):
 
 class DepartmentViewSet(viewsets.ModelViewSet):
     queryset = Department.objects.filter()
-    serializer_class = DepartmentSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
