@@ -7,6 +7,7 @@ from rest_framework.permissions import IsAuthenticated
 class StaffViewSet(viewsets.ModelViewSet):
     queryset = Staff.objects.all()
     serializer_class = StaffSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
 class DepartmentViewSet(viewsets.ModelViewSet):
