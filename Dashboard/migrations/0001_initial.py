@@ -33,7 +33,6 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('Name', models.CharField(max_length=100)),
                 ('Email', models.EmailField(max_length=254)),
-                ('Phone_number', models.PositiveIntegerField()),
                 ('Address', models.CharField(max_length=250)),
                 ('Message', models.TextField()),
             ],
