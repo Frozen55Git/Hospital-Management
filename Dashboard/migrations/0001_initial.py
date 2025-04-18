@@ -51,6 +51,7 @@ class Migration(migrations.Migration):
                 ('Home_address', models.CharField(max_length=100)),
                 ('State', models.CharField(max_length=100)),
                 ('Age', models.PositiveIntegerField(blank=True, null=True)),
+                ('Country', models.CharField(max_length=100)),
                 ('Position', models.CharField(max_length=100)),
                 ('Salary', models.PositiveIntegerField(blank=True, null=True)),
                 ('On_probation', models.BooleanField(default=True)),
