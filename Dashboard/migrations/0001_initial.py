@@ -68,7 +68,6 @@ class Migration(migrations.Migration):
                 ('Salary', models.PositiveIntegerField()),
                 ('Position', models.CharField(max_length=100)),
                 ('Department', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='Dashboard.Department')),
-                ('Name', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='Dashboard.Staff')),
             ],
         ),
         migrations.CreateModel(
