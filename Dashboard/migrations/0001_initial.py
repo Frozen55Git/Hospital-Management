@@ -46,7 +46,6 @@ class Migration(migrations.Migration):
                 ('Last_name', models.CharField(max_length=100)),
                 ('Phone_number', models.PositiveIntegerField()),
                 ('email', models.EmailField(max_length=254)),
-                ('Reference', models.CharField(max_length=11)),
                 ('Reference_phone_number', models.PositiveIntegerField()),
                 ('Home_address', models.CharField(max_length=100)),
                 ('State', models.CharField(max_length=100)),
