@@ -25,7 +25,6 @@ admin.site.register(Nurses, NursesAdmin)
 class ICTAdmin(admin.ModelAdmin):
     list_display = ['first_name', 'last_name', 'position', 'joined', 'email',
                     'phone_number']
-    list_filter = ['first_name', 'last_name', 'phone_number']
     search_fields = ['first_name', 'last_name', 'phone_number']
     list_per_page = 50
 admin.site.register(ICT, ICTAdmin)
