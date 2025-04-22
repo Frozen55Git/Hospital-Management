@@ -53,10 +53,3 @@ class ICT(BaseContent):
 
     def __str__(self):
         return self.first_name
-
-
-
-class ContractWorkers(BaseContent):
-
-    def __str__(self):
-        return self.first_name
