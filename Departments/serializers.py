@@ -45,6 +45,7 @@ class TechnicianSerializer(serializers.ModelSerializer):
 
 class ContractWorkerSerializer(serializers.ModelSerializer):
     # Formating our date field to return only the Year field
+    joined = serializers.DateTimeField(format="%Y", read_only=True)
     class Meta:
         model = ContractWorkers
         fields = "__all__"
