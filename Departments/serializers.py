@@ -8,6 +8,7 @@ class DoctorSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Doctors
+        fields = "__all__"
 
 
 class NurseSerializer(serializers.ModelSerializer):
