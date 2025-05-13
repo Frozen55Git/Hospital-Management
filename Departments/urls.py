@@ -3,6 +3,7 @@ from .views import DoctorsViewSet, NursesViewSet, ICTViewSet, HumanResourcesView
 
 
 router = routers.DefaultRouter()
+router.register('ict', ICTViewSet, 'ICT'),
 router.register('humanresource', HumanResourcesViewSet, 'HumanResource'),
 router.register('technicians', TechniciansViewSet, 'Technicians'),
 router.register('contractworkers', ContractWorkersViewSet, 'ContractWorkers'),
